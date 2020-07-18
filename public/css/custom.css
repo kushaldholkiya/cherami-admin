@@ -1,0 +1,41 @@
+.errorClass{
+    color: #d33960 !important;
+    font-size: 16px;
+}
+
+.errorClassWhite{
+    color: #fff !important;
+    font-size: 16px;
+}
+.pb15{
+    padding-bottom: 15px !important;
+}
+
+.has-error{
+    border-color: #d33960 !important;
+    margin-bottom: 5px !important;
+}
+
+.has-error-white{
+    border-color: #d33960 !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.selectize-input > * {
+    color: gray;
+}
+
+.form-section input + label,.form-section textarea + label{
+    color: gray;
+}
+.hide{
+    display: none!important;
+}
+#subscribe-thank p,#subscribe-thank-mob p{
+    font-size: 13px;
+}

@@ -31,4 +31,11 @@ Route::get('/create-role/{name}', function (Request $request){
 
 Route::get('/assign-role/{name}', function (Request $request){
     return \Illuminate\Support\Facades\Auth::user()->assignRole($request->name);
-});
+})->middleware(['auth']);
+
+Route::get('/admin','AdminController@index')->name('Dashboard');
+
+Route::get('/quick-search', 'PagesController@quickSearch')->name('quick-search');
+
+Route::resource('/admin/influencers','InfluencersController');
+
