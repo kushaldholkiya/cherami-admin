@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Edit influencer')
+@section('title', 'Add agent')
 
 @section('content')
     @if (session('status'))
@@ -14,7 +14,7 @@
             <!--begin: Wizard-->
             <div class="wizard wizard-2">
                 <!--begin: Wizard Body-->
-                <div class="wizard-body py-8 px-8">
+            <div class="wizard-body py-8 px-8">
                     <!--begin: Wizard Form-->
                     <div class="row">
                         <div class="col-xxl-12">
@@ -28,55 +28,36 @@
                                         </ul>
                                     </div><br />
                                 @endif
-                                <form method="post" action="{{ route('influencers.update', $influencer->id) }}" enctype="multipart/form-data">
-                                    @method('PATCH')
+                                <form method="post" action="{{ route('agents.store') }}" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
                                         <label for="name">Name</label>
-                                        <input type="text" class="form-control" name="name" value="{{ $influencer->name }}"/>
+                                        <input type="text" class="form-control" name="name"/>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="phone">Phone</label>
-                                        <input type="text" class="form-control" name="phone" value="{{ $influencer->phone }}"/>
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" name="email"/>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="display_name">Display Name</label>
-                                        <input type="text" class="form-control" name="display_name" value="{{ $influencer->display_name }}"/>
+                                        <label for="password">Password</label>
+                                        <input type="text" class="form-control" name="password"/>
                                     </div>
 
                                     <div class="form-group fv-plugins-icon-container">
                                         <label>Display Picture</label>
                                         <br>
-                                        <img src="{{ $influencer->display_picture }}" height="300" width="300" />
+
                                         <input type="file" class="form-control form-control-solid form-control-lg" name="display_picture" placeholder="Header web image" value="">
                                         <div class="fv-plugins-message-container"></div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="status">Status</label>
-                                        <select class="form-control" name="status">
-                                            <?php
-                                            $activeselected = $inactiveselected = "";
-                                            if($influencer->status == 1){
-                                                $activeselected = "selected";
-                                            } else{
-                                                $inactiveselected = "selected";
-                                            } ?>
-                                            <option value="1">Active</option>
-                                            <option value="0">Inactive</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="job_title">User</label>
-                                        <select name="user_id" class="form-control">
-                                            <?php foreach($users as $key=>$user){
-                                                if($user->id == $influencer->user_id){ ?>
-                                                    <option value="<?php echo $user->id; ?>" selected><?php echo $user->name; ?></option>
-                                                <?php } else { ?>
-                                                    <option value="<?php echo $user->id; ?>"><?php echo $user->name; ?></option>
-                                                <?php } ?>
+                                        <label for="job_title">Role</label>
+                                        <select name="role" class="form-control">
+                                            <?php foreach($roles as $key=>$role){ ?>
+                                                <option><?php echo $role->name; ?></option>
                                             <?php } ?>
                                         </select>
                                     </div>
@@ -84,6 +65,7 @@
                                         <div class="mr-2"></div>
                                         <div>
                                             <button class="btn btn-success font-weight-bold text-uppercase px-9 py-4" data-wizard-type="action-submit">Submit</button>
+                                            <button class="btn btn-primary font-weight-bold text-uppercase px-9 py-4" type="reset" >Reset</button>
                                         </div>
                                     </div>
                                 </form>

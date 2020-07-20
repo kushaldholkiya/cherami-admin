@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e8f79f1-8089-43a0-a0f9-fc4310a63ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrganizationsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Organizations.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/organizations/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/organizations/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/organizations/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/organizations/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Agents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AgentsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/159524016386.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/agents/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/agents/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/agents/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/agents/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrganizationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrganizationsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/menu_aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/menu_aside.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/influencers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/influencers/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,18 +131,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/organizations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/agents" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin/agents" />
       <recent name="$PROJECT_DIR$/resources/views/admin/organizations" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/app/Providers" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -174,7 +176,7 @@
       <workItem from="1594900365882" duration="2031000" />
       <workItem from="1594963042082" duration="4521000" />
       <workItem from="1595015528641" duration="12817000" />
-      <workItem from="1595223023498" duration="4163000" />
+      <workItem from="1595223023498" duration="8315000" />
     </task>
     <servers />
   </component>

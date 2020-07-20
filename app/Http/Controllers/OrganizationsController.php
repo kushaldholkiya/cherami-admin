@@ -52,6 +52,7 @@ class OrganizationsController extends Controller
             'name' => $request->get('name'),
             'phone' => $request->get('phone'),
             'api_key' => $request->get('api_key'),
+            'is_default' => 1,
         ]);
         $organization->save();
 
