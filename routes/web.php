@@ -38,4 +38,5 @@ Route::get('/admin','AdminController@index')->name('Dashboard');
 Route::get('/quick-search', 'PagesController@quickSearch')->name('quick-search');
 
 Route::resource('/admin/influencers','InfluencersController');
+Route::resource('/admin/organizations','OrganizationsController');
 
